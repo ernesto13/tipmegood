@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
+    
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -15,6 +23,114 @@
     <title>tipMeGood</title>
 </head>
 <body>
+  
+   <!--navbar-->
+
+  <nav>
+    <div class="nav-wrapper">
+      <!--<a href="#!" class="brand-logo logo-center"><i class="material-icons">restaurant_menu</i>Logo</a>-->
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <!--<li><a href="sass.html">Sass</a></li>-->
+        <!--<li><a href="badges.html">Components</a></li>-->
+        <!--<li><a href="collapsible.html">JavaScript</a></li>-->
+      </ul>
+    </div>
+  </nav>
+
+  <!--end of navbar-->
+  
+  
+   <div class="container">
+    <!-- Page Content goes here -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h4 id="amount-headline" class="center-align">Amount Due</h4>
+        <hr/>
+        <div class="center-align" id="total-amount-div"></div>
+
+        <div class="center-align" id="total-tip-amount"></div>
+
+        <div class="center-align" id="total-guest-div"></div>
+
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close Tab</a>
+      </div>
+    </div>
+
+    <!--end of modal-->
+
+
+    <!--<div class="row">-->
+    <form class="col s12 m6 l6">
+      <div class="">
+        <div class="input-field col s6 m6 l4">
+          <i class="material-icons prefix">payment</i>
+          <input id="total-bill" type="number" class="">
+          <label for="total-bill">Total Amount due</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">attach_money</i>
+          <input id="total-tip" type="number" class="validate">
+          <label for="total-tip">Tip Percent</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">format_list_numbered</i>
+          <input id="total-guest" type="number" class="validate">
+          <label for="total-guest">Number of People (optional)</label>
+        </div>
+        <div class="center-align">
+          <button id="clearBtn" class="btn waves-effect waves-light z-depth-3 hoverable  red darken-3" type="reset" name="reset">
+    <i class="material-icons ">delete_forever</i>
+  </button>
+
+          <a id="submitBtn" class="waves-effect waves-light btn modal-trigger z-depth-3 blue-grey hoverable" href="#modal1"><i class="material-icons ">check</i></a>
+        </div>
+
+      </div>
+    </form>
+    
+    
+    
+    
+  </div>
+  
+   <!--<footer class="page-footer">-->
+   <!--       <div class="container">-->
+   <!--         <div class="row">-->
+              <!--<div class="col l6 s12">-->
+              <!--  <h5 class="white-text">Footer Content</h5>-->
+              <!--  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>-->
+              <!--</div>-->
+   <!--           <div class="col l4 offset-l2 s12">-->
+   <!--             <h5 class="white-text">Links</h5>-->
+   <!--             <ul>-->
+   <!--               <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>-->
+                  
+   <!--             </ul>-->
+   <!--           </div>-->
+   <!--         </div>-->
+   <!--       </div>-->
+   <!--       <div class="footer-copyright">-->
+   <!--         <div class="container">-->
+   <!--         © 2014 Copyright Text-->
+   <!--         <a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+   <!--         </div>-->
+   <!--       </div>-->
+   <!--     </footer>-->
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!--greensock framework-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="assets/javascript/script.js"></script>
     
 </body>
 </html>
