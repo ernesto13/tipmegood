@@ -35,7 +35,7 @@ body {
 
 .modal,
 .modal .modal-footer {
-    background-image: url("../images/mirrored_squares.png");
+    background-image: url("../images/mirrored_squares_@2X.png");
     background-color: #a3a3a3;
 }
 
