@@ -1,7 +1,7 @@
 $(document).ready( () => {
     // body...
 
-    function toastTipsGenerator() {
+    const toastTipsGenerator = () => {
         const cleverTips = ["Even the Titanic tipped!",
         "Money is the root of all evil. Cleanse yourself here!", 
         "If you fear change, leave it in the tip jar", 
