@@ -1,12 +1,18 @@
-$(document).ready(function() {
+$(document).ready( () => {
     // body...
 
-
-
     function toastTipsGenerator() {
-        var cleverTips = ["Money is the root of all evil. Cleanse yourself here!", "If you fear change, leave it in the tip jar", "Tipping makes you incredibly sexually attractive", "Feeling Tipsy?", "Tips, they are like hugs without the awkward body contact", "Drop it like it's hot!", "Tipping... Not just for cows...", "Tipping is not a city in China!", "Sexy people tip!", "Boats can tip, So can you!", "Every time you tip, Chuck Norris roundhouse kicks a Justin Bieber fan!!"];
+        const cleverTips = ["Even the Titanic tipped!",
+        "Money is the root of all evil. Cleanse yourself here!", 
+        "If you fear change, leave it in the tip jar", 
+        "Tipping makes you incredibly sexually attractive", "Feeling Tipsy?",
+         "Tips, they are like hugs without the awkward body contact", "Drop it like it's hot!", 
+         "Tipping... Not just for cows...", 
+        "Tipping is not a city in China!", "Sexy people tip!", "Boats can tip, So can you!", 
+        "Every time you tip, Chuck Norris roundhouse kicks a Justin Bieber fan!!",
+        "Show me your Tips!","Please help fight sobriety"];
 
-        var index = cleverTips[Math.floor(Math.random() * cleverTips.length)];
+        const index = cleverTips[Math.floor(Math.random() * cleverTips.length)];
         M.toast({ html: index });
     }
     toastTipsGenerator();
