@@ -29,10 +29,13 @@ $(document).ready( () => {
         const totalBillOfSale = totalBill * totalTipInput;
         const totalBillPlusTip = totalBillOfSale + totalBill;
         const totalGuestOutput = totalBillPlusTip / totalGuestInput;
+        //  variables to use in template literals
         const totalPlusTip = parseFloat(totalBillPlusTip).toFixed(2);
         const totalSale = parseFloat(totalBillOfSale).toFixed(2);
+        const guestOutPut = parseFloat(totalGuestOutput).toFixed(2);
         const billString = "Total bill is: $";
         const tipString = "Total tip is: $";
+        const guestString = "Each of you owe: $";
 
 
         if (isNaN(totalBill) || totalBill === "" || isNaN(totalTipInput) || totalTipInput === "") {
@@ -73,7 +76,7 @@ $(document).ready( () => {
         //if customer decides to add a guest to the bill
 
         if (totalGuestInput >= 1) {
-            $("#total-guest-div").html("Each of you owe: $" + parseFloat(totalGuestOutput).toFixed(2));
+            $("#total-guest-div").html(`${guestString + guestOutPut}`);
         }
         else if (isNaN(totalGuestInput) || totalGuestInput === "") {
             $("#total-guest-div").text("");
