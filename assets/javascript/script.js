@@ -29,6 +29,11 @@ $(document).ready( () => {
         const totalBillOfSale = totalBill * totalTipInput;
         const totalBillPlusTip = totalBillOfSale + totalBill;
         const totalGuestOutput = totalBillPlusTip / totalGuestInput;
+        const totalPlusTip = parseFloat(totalBillPlusTip).toFixed(2);
+        const totalSale = parseFloat(totalBillOfSale).toFixed(2);
+        const billString = "Total bill is: $";
+        const tipString = "Total tip is: $";
+
 
         if (isNaN(totalBill) || totalBill === "" || isNaN(totalTipInput) || totalTipInput === "") {
             $("#total-amount-div").html("<h5>" + "Error, Enter Numbers!!" + "</h5>");
@@ -36,8 +41,8 @@ $(document).ready( () => {
         }
         else {
 
-            $("#total-amount-div").html("<h5>" + "Total bill is: $" + parseFloat(totalBillPlusTip).toFixed(2) + "</h5>" + "<hr>");
-            $("#total-tip-amount").html("<h5>" + "Total tip is: $" + parseFloat(totalBillOfSale).toFixed(2) + "</h5>" + "<hr>");
+            $("#total-amount-div").html(`${billString + totalPlusTip}` + "<hr>");
+            $("#total-tip-amount").html( `${tipString + totalSale}` + "<hr>");
         }
 
         // if statement for guest here
@@ -68,7 +73,7 @@ $(document).ready( () => {
         //if customer decides to add a guest to the bill
 
         if (totalGuestInput >= 1) {
-            $("#total-guest-div").html("<h5>" + "Each of you owe: $" + parseFloat(totalGuestOutput).toFixed(2) + "</h5>");
+            $("#total-guest-div").html("Each of you owe: $" + parseFloat(totalGuestOutput).toFixed(2));
         }
         else if (isNaN(totalGuestInput) || totalGuestInput === "") {
             $("#total-guest-div").text("");
