@@ -90,9 +90,6 @@ $(document).ready( () => {
         $("#total-guest-div").text("");
     };
 
-    $("#clearBtn").on("click", function() {
-        clearFields();
-
-    });
+    $("#clearBtn").on("click", () => clearFields());
 
 });
