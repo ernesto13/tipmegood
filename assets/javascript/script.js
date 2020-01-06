@@ -1,6 +1,5 @@
 $(document).ready( () => {
-    // body...
-
+   
     const toastTipsGenerator = () => {
         const cleverTips = ["Even the Titanic tipped!",
         "Money is the root of all evil. Cleanse yourself here!", 
@@ -18,7 +17,7 @@ $(document).ready( () => {
     toastTipsGenerator();
 
     $('.modal').modal();
-    $("#submitBtn").on("click", function(e) {
+    $("#submitBtn").on("click", (e) => {
         e.preventDefault();
         // set up variables
         const totalBill = parseFloat($("#total-bill").val());
