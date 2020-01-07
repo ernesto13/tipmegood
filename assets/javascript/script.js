@@ -82,7 +82,7 @@ $(document).ready( () => {
         }
     });
 
-    let clearFields = () => {
+    const clearFields = () => {
         $("#amount-headline").html("Amount Due");
         $("#total-amount-div").text("");
         $("#total-tip-amount").text("");
