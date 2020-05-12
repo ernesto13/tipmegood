@@ -39,7 +39,7 @@ $(document).ready( () => {
         const guestString = "Each of you owe: $";
         const done = $('#done');
         const doneAll = $('#doneAll');
-        done.hide();
+        done.fadeOut();
         doneAll.fadeIn();
 
 
@@ -94,6 +94,7 @@ $(document).ready( () => {
         $("#total-amount-div").text("");
         $("#total-tip-amount").text("");
         $("#total-guest-div").text("");
+        $('#done').fadeIn();
     };
 
     $("#clearBtn").on("click", () => clearFields());
