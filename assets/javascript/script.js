@@ -45,6 +45,8 @@ $(document).ready( () => {
 
 
         if (isNaN(totalBill) || totalBill === "" || isNaN(totalTipInput) || totalTipInput === "") {
+            doneAll.hide();
+            done.fadeIn();
             $("#total-amount-div").html("<h5>" + "Error, Enter Numbers!!" + "</h5>");
 
         }
