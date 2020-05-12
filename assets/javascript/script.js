@@ -1,7 +1,7 @@
 $(document).ready( () => {
    
     const submitBtn = $('#submitBtn');
-    
+
     const toastTipsGenerator = () => {
         const cleverTips = ["Even the Titanic tipped!",
         "Money is the root of all evil. Cleanse yourself here!", 
@@ -37,6 +37,11 @@ $(document).ready( () => {
         const billString = "Total bill is: $";
         const tipString = "Total tip is: $";
         const guestString = "Each of you owe: $";
+        const done = $('#done');
+        const doneAll = $('#doneAll');
+        done.hide();
+        doneAll.fadeIn();
+
 
 
         if (isNaN(totalBill) || totalBill === "" || isNaN(totalTipInput) || totalTipInput === "") {
