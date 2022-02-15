@@ -1,4 +1,17 @@
 $(document).ready( () => {
+
+
+// var animation = bodymovin.loadAnimation({
+//   container: document.getElementById('lottie'), // Required
+//   path: 'data.json', // Required
+//   renderer: 'svg/canvas/html', // Required
+//   loop: true, // Optional
+//   autoplay: true, // Optional
+//   name: "Hello World", // Name for future reference. Optional.
+// })
+
+// 
+// https://airbnb.io/lottie/#/web
    
     const submitBtn = $('#submitBtn');
 
@@ -11,7 +24,7 @@ $(document).ready( () => {
          "Tipping... Not just for cows...", 
         "Tipping is not a city in China!", "Sexy people tip!", "Boats can tip, So can you!", 
         "Every time you tip, Chuck Norris roundhouse kicks a Justin Bieber fan!!",
-        "Show me your Tips!","Please help fight sobriety"];
+        "Show me your Tips!","Please help fight sobriety", "On a scale of from $1 - $10, how attractive are you?", "Tipping is good karma"];
 
         const index = cleverTips[Math.floor(Math.random() * cleverTips.length)];
         M.toast({ html: index });
